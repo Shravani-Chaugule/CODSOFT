@@ -1,4 +1,4 @@
-# My CodSoft Web Development Internship Projects
+# CodSoft Web Development Internship Projects
 
 ## About Me
 - **Name:** Shravani Chaugule  
