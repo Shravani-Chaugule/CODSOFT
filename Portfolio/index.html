@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="logo-section">
+      <div class="my-logo">My Portfolio</div>
+    </div>
+    <nav class="desktop-nav">
+      <a href="#home-section">Home</a>
+      <a href="#about-section">About</a>
+      <a href="#skills-section">Skills</a>
+      <a href="#projects-section">Projects</a>
+      <a href="#contact-section">Contact</a>
+    </nav>
+    <button id="mobile-menu-btn" class="hamburger-btn">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <nav id="mobile-nav-menu" class="mobile-navigation">
+      <ul class="mobile-nav-list">
+        <li class="nav-item"><a href="#home-section">Home</a></li>
+        <li class="nav-item"><a href="#about-section">About</a></li>
+        <li class="nav-item"><a href="#skills-section">Skills</a></li>
+        <li class="nav-item"><a href="#projects-section">Projects</a></li>
+        <li class="nav-item"><a href="#contact-section">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="content-wrapper">
+    <section id="home-section" class="hero-section">
+      <div class="hero-left">
+        <h1 class="main-title">Welcome to my portfolio!</h1>
+        <p class="my-name">Hi there! I'm Shravani Chaugule</p>
+        <p class="intro-text">Click these buttons to download my resume or to check my works!</p>
+        <div class="button-container">
+          <a class="download-btn" href="Resume.pdf" download>Download My Resume</a>
+          <a class="projects-btn" href="#projects-section">View My Projects</a>
+        </div>
+      </div>
+      <img src="Profile.jpg" alt="My profile picture" class="profile-image">
+    </section>
+
+    <section id="about-section" class="content-card">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-description">Hi! I'm a BSc IT student who loves doing code. I enjoy learning new technologies
+        and building cool projects that people can actually use.</p>
+      <p class="about-details">Right now this is a student portfolio project made using HTML, CSS, and a bit of JavaScript.</p>
+    </section>
+
+    <section id="skills-section" class="content-card">
+      <h2 class="section-title">My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3 class="skill-category-title">Web Development</h3>
+          <div class="skill-icons-grid">
+            <div class="individual-skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 logo"
+                width="50" height="50">
+              <span class="skill-name">HTML5</span>
+            </div>
+            <div class="individual-skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 logo"
+                width="50" height="50">
+              <span class="skill-name">CSS3</span>
+            </div>
+            <div class="individual-skill">
+              <img src="https://static.cdnlogo.com/logos/j/69/javascript.svg" alt="JavaScript logo" width="50"
+                height="50">
+              <span class="skill-name">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">Programming Languages</h3>
+          <div class="skill-icons-grid">
+            <div class="individual-skill">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo"
+                width="50" height="50">
+              <span class="skill-name">Python</span>
+            </div>
+            <div class="individual-skill">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"
+                alt="C programming logo" width="50" height="50">
+              <span class="skill-name">C Language</span>
+            </div>
+            <div class="individual-skill">
+              <img src="https://www.svgrepo.com/show/331760/sql-database-generic.svg" alt="SQL logo" width="50"
+                height="50">
+              <span class="skill-name">SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects-section" class="content-card">
+      <h2 class="section-title">My Projects</h2>
+      <p class="projects-intro">Here are some projects I've worked on :</p>
+      <div class="projects-container">
+        <div class="project-card">
+          <div class="project-info">
+            <h3 class="project-title">Responsive Landing Page</h3>
+            <p class="project-description">A clean and modern landing page I built using HTML, CSS, and a bit of
+              JavaScript. It has a contact form and looks good on mobile too!</p>
+          </div>
+          <a href="https://github.com/student-username/landing-page-project" target="_blank" class="project-link">
+            <button class="view-code-btn">View Source Code</button>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-info">
+            <h3 class="project-title">Basic Calculator App</h3>
+            <p class="project-description">My first JavaScript project! A simple calculator that can do basic math
+              operations. I learned a lot about DOM manipulation while building this.</p>
+          </div>
+          <a href="https://github.com/student-username/calculator-project" target="_blank" class="project-link">
+            <button class="view-code-btn">View Source Code</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-section" class="content-card contact-area">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">Want to connect? Here's how you can reach me:</p>
+      <div class="contact-methods">
+        <a href="tel:+918828308828" class="contact-option">
+          <h3 class="contact-type">Phone</h3>
+          <span class="contact-detail">+91 88283 08828</span>
+        </a>
+        <a href="mailto:shravanismile20@gmail.com" class="contact-option">
+          <h3 class="contact-type">Email</h3>
+          <span class="contact-detail">shravanismile20@gmail.com</span>
+        </a>
+        <a href="https://github.com/shravani-chaugule" class="contact-option" target="_blank">
+          <h3 class="contact-type">GitHub</h3>
+          <span class="contact-detail">github.com/shravani-chaugule</span>
+        </a>
+        <a href="https://linkedin.com/in/shravani-chaugule" class="contact-option" target="_blank">
+          <h3 class="contact-type">LinkedIn</h3>
+          <span class="contact-detail">linkedin.com/in/shravani-chaugule</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p class="copyright-text">&copy; 2025 Shravani Chaugule - All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Landing Page - Student Project</title>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <nav class="navigation-bar">
+                <div class="logo-section">
+                    <a class="logo-link" href="#home">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg"
+                            alt="Spotify logo" width="35" height="35">
+                        <span class="logo-text">Spotify </span>
+                    </a>
+                </div>
+
+                <ul class="nav-links" id="navigation-menu">
+                    <li class="nav-item"><a href="#home">Home</a></li>
+                    <li class="nav-item"><a href="#features">Features</a></li>
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+
+                <button class="mobile-menu-btn" id="mobile-toggle">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="home" class="hero-area">
+            <div class="hero-content header-container">
+                <h1 class="hero-title">Welcome to Spotify </h1>
+                <p class="hero-description">Discover millions of songs and podcasts for free. Create playlists, download
+                    for offline listening, and enjoy music anywhere you go!</p>
+                <div class="button-row">
+                    <button class="action-btn primary-btn" onclick="scrollToSection('features')">Explore Our
+                        features</button>
+                    <a href="#contact" class="action-btn secondary-btn">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-area">
+            <div class="header-container">
+                <h2 class="section-heading">What We Offer</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=60"
+                            alt="Music streaming" class="feature-image">
+                        <h3 class="feature-title">Unlimited Music</h3>
+                        <p class="feature-text">Access millions of songs from your favorite artists, curated playlists,
+                            and smart recommendations just for you.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=60"
+                            alt="Podcast listening" class="feature-image">
+                        <h3 class="feature-title">Amazing Podcasts</h3>
+                        <p class="feature-text">Browse thousands of podcasts covering news, stories, education, true
+                            crime and much more content.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?auto=format&fit=crop&w=1200&q=60"
+                            alt="Offline download" class="feature-image">
+                        <h3 class="feature-title">Download & Listen Offline</h3>
+                        <p class="feature-text">Save your favorite songs and podcasts to listen without internet
+                            connection. Perfect for travel!</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <img src="https://plus.unsplash.com/premium_photo-1682096504254-4b6400241e91?fm=jpg&ixlib=rb-4.1.0&q=60&w=1200"
+                            alt="Custom playlists" class="feature-image">
+                        <h3 class="feature-title">Custom Playlists</h3>
+                        <p class="feature-text">Create, share and collaborate on playlists. Make them public or private
+                            and discover music with friends.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-area">
+            <div class="header-container about-container">
+                <div class="about-text">
+                    <h2 class="section-heading">About Our Music Platform</h2>
+                    <p class="about-intro">Our platform connects music lovers and creators from around the world. With
+                        millions of tracks, thousands of podcasts, and personalized experiences that adapt to your
+                        taste.</p>
+
+                    <ul class="features-list">
+                        <li class="feature-text"><strong>Personalized</strong> playlists and recommendations based on
+                            your music taste.</li>
+                        <li class="feature-text"><strong>Offline listening</strong> with cross-device sync and discovery
+                            tools.</li>
+                        <li class="feature-text"><strong>Creator support</strong> with publishing tools and analytics.
+                        </li>
+                    </ul>
+
+                    <div class="about-buttons">
+                        <button class="action-btn primary-btn" onclick="scrollToSection('features')">See All
+                            Features</button>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-number">100M+</div>
+                            <div class="stat-label">Songs Available</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">5M+</div>
+                            <div class="stat-label">Podcast Episodes</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number">500M+</div>
+                            <div class="stat-label">Total Users</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-area">
+            <div class="header-container">
+                <h2 class="section-heading">Contact Us</h2>
+
+                <form class="contact-form-container" id="contact-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="name">Your Name</label>
+                            <input id="name" name="name" type="text" class="form-input" autocomplete="name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Your Email</label>
+                            <input id="email" name="email" type="email" class="form-input" autocomplete="email"
+                                required>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" class="form-input" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send My Message</button>
+                    <div id="form-message" class="status-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="header-container">
+            <p class="footer-text">&copy; 2025 Spotify - Student Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
