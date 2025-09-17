@@ -106,4 +106,4 @@ window.addEventListener('load', function () {
     console.log('Page loaded, updating navigation');
     highlightCurrentSection();
 });
-console.log('Portfolio JavaScript file loaded successfully! 🎉');
+console.log('Portfolio JavaScript file loaded successfully! ');
